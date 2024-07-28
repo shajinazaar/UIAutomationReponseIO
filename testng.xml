@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+    <test name="Test">
+        <groups>
+            <define name="login">
+                <include name="login"/>
+            </define>
+        </groups>
+        <classes>
+            <class name="LoginFlowTest"/>
+            <class name="AddWorkSpaceUserTest"/>
+        </classes>
+    </test>
+</suite>
